@@ -1,3 +1,5 @@
+🔊 Nova – Voice-Controlled Desktop Assistant using Python
+
 Nova is a lightweight, voice-activated desktop assistant developed in Python. It responds to spoken commands to perform basic tasks like opening websites or playing music. With simple voice interaction, Nova makes hands-free control of your computer easy and efficient.
 
 💻 How It Works
