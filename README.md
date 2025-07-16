@@ -1,32 +1,46 @@
-# Nova-AI-Platform-
-Nova is a simple voice-activated virtual assistant built using Python. It listens for voice commands and performs various tasks such as opening websites, playing music, and responding to user input using speech synthesis.
-🔧 Features:
-Wake Word Activation: Listens for the keyword “Nova” to activate.
+Nova is a lightweight, voice-activated desktop assistant developed in Python. It responds to spoken commands to perform basic tasks like opening websites or playing music. With simple voice interaction, Nova makes hands-free control of your computer easy and efficient.
 
-Voice Recognition: Uses the speech_recognition library to convert spoken words into text.
+💻 How It Works
+ 
+   Wake Word Detection: Nova continuously listens for the wake word "Nova" using your microphone.
+    Speech Recognition: Once activated, it captures the next spoken command using the speech_recognition library and converts it into text.
+    Command Processing: Based on the recognized text, Nova checks for predefined commands and performs the appropriate action.
+    Speech Response: Using pyttsx3, Nova speaks back to the user for confirmation or feedback.
 
-Web Automation: Opens popular websites like Google, YouTube, Instagram, and more via simple voice commands.
+🔧 Feature
+   
+    ✅ Voice-activated with the keyword “Nova”
 
-Music Playback: Integrates with a custom musiclibrary module to play music based on voice commands.
+    ✅ Opens popular websites like:
 
-Text-to-Speech: Uses pyttsx3 to provide spoken responses and feedback.
+      Google, YouTube, Facebook, Instagram, Twitter, WhatsApp
 
-Graceful Exit: Say "stop" to terminate the assistant.
+    ✅ Plays music via a customizable musiclibrary module
 
-🧠 How It Works:
-Nova continuously listens using the system's microphone.
+    ✅ Responds to user with speech (TTS)
+    
+    ✅ Gracefully exits when the user says "stop"
 
-When the wake word “Nova” is detected, it prompts the user for a command.
+    ✅ Basic error handling for unrecognized input
 
-The command is recognized and processed accordingly—whether it’s opening a website or playing a song.
+🧠 Technologies Used
+  Python
 
-If the command isn’t recognized, Nova politely asks the user to try again.
+    speech_recognition – for converting voice to text
 
-📦 Libraries Used:
-speech_recognition
+    pyttsx3 – for text-to-speech feedback
 
-pyttsx3
+    webbrowser – to open websites
 
-webbrowser
+    musiclibrary – custom module mapping song names to URLs
 
-musiclibrary (custom module)
+🚀 Usage
+Run the script.
+
+  Say “Nova” to activate the assistant.
+  Speak a command like:
+  "Open YouTube"
+  "Play [song name]"
+  "Stop" to exit
+
+
